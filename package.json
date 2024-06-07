@@ -1,0 +1,12 @@
+{
+  "name": "django-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Joao Dantas <me@joaodantas.com>",
+  "license": "ISC",
+  "description": "Package to handle authentication in Django",
+  "dependencies": {}
+}
