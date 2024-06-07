@@ -1,5 +1,5 @@
 const assert = require('assert')
-const test = require('./core')
+const { test } = require('./core')
 const { verify } = require("../src");
 
 test("Verify correct password", () => {

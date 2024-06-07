@@ -1,4 +1,4 @@
-const test = require("./core");
+const { test } = require("./core");
 const assert = require('assert');
 const { djangoHash } = require("../src");
 

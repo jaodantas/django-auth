@@ -1,3 +1,5 @@
+const fail = [];
+
 const test = (description, fn) => {
     try {
         fn();
@@ -5,7 +7,8 @@ const test = (description, fn) => {
     } catch (error) {
         console.error(`✗ ${description}`);
         console.error(error.message);
+        fail.push(description);
     }
 }
 
-module.exports = test;
+module.exports = { test, fail };
