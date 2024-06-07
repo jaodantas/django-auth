@@ -1,6 +1,12 @@
 # django-auth
 
-Perform login verification used in Django.
+Perform login verification used in Django Framework with pbkdf2.
+
+## Install
+
+```
+npm install django-auth
+```
 
 ## Usage
 
@@ -14,14 +20,15 @@ verify(password, djangoHash); // true
 
 ### Generate Django Hash
 
-- Default 
-salt: random, 
-iterations: 24000, 
-algorithm: sha256
+Default
+
+- salt: random, 
+- iterations: 24000, 
+- algorithm: sha256
 
 ```
 djangoHash(password); 
-// returning `pbkdf2_${algorithm}${iterations}${salt}${hash}`
+// return `pbkdf2_${algorithm}${iterations}${salt}${hash}`
 ```
 
 or 

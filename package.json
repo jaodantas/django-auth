@@ -12,5 +12,9 @@
   "author": "Joao Dantas <me@joaodantas.com>",
   "license": "ISC",
   "description": "Package to handle authentication in Django",
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "django",
+    "auth",
+    "pbkdf2"]
 }
