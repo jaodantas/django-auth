@@ -15,3 +15,9 @@ test("Verify incorrect password", () => {
     const result = verify(password, djangoHash);
     assert.strictEqual(result, false);
 });
+
+test("Verify invalid Django hash", () => {
+    const djangoHash = 'invalidhash';
+    const password = 'password';
+    assert.throws(() => verify(password, djangoHash), { message: 'Invalid Django hash' });
+})
